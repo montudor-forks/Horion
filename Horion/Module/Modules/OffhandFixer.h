@@ -9,7 +9,7 @@ public:
 	OffhandFixer();
 	~OffhandFixer();
 
-	void OffhandFixer::onTick(C_GameMode* gm);
-	const char* OffhandFixer::getModuleName();
+	virtual const char* getModuleName() override;
+	virtual void onTick(C_GameMode* gm) override;
 };
 
